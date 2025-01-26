@@ -94,3 +94,6 @@ max-wrap = 20
 max-indent-retain = 40
 wrap-indicator = "↪"
 wrap-at-text-width = false
+
+[keys.insert]
+j = { k = ["normal_mode", ":write"]}
