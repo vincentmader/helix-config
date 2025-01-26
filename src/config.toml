@@ -19,7 +19,7 @@ auto-info = true
 true-color = false
 undercurl = false
 rulers = []
-bufferline = "always"       # never*, always, multiple
+bufferline = "always"      # never*, always, multiple
 auto-pairs = true
 
 [editor.statusline]
@@ -79,7 +79,7 @@ render = "none" # all, none*, or table
 
 [editor.indent-guides]
 render = true
-character = "▏"  # Some characters that work well: "▏", "╎", "┆", "┊", "|"
+character = "▏" # Some characters that work well: "▏", "╎", "┆", "┊", "|"
 skip-levels = 1
 
 [editor.gutters]
@@ -96,4 +96,4 @@ wrap-indicator = "↪"
 wrap-at-text-width = false
 
 [keys.insert]
-j = { k = ["normal_mode", ":write"]}
+j = { k = ["normal_mode", ":write"] }
