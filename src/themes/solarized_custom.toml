@@ -12,3 +12,8 @@ inherits = "solarized_dark"
 "ui.text.focus" = "blue"
 "ui.text.info" = "blue"
 "diagnostic.error" = "red"
+
+"warning" = { fg = "yellow", modifiers = ["bold", "underlined"] }
+"error" = { fg = "red", modifiers = ["bold", "underlined"] }
+"info" = { fg = "blue", modifiers = ["bold", "underlined"] }
+"hint" = { fg = "base01", modifiers = ["bold", "underlined"] }
