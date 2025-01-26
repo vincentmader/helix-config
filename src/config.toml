@@ -43,7 +43,7 @@ goto-reference-include-declaration = true
 [editor.cursor-shape]
 # block*, bar, underline, hidden
 normal = "block"
-insert = "block"
+insert = "bar"
 select = "block"
 
 [editor.file-picker]
