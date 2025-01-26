@@ -19,7 +19,7 @@ auto-info = true
 true-color = false
 undercurl = false
 rulers = []
-bufferline = "never"       # never*, always, multiple
+bufferline = "always"       # never*, always, multiple
 auto-pairs = true
 
 [editor.statusline]
