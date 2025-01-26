@@ -78,8 +78,8 @@ render = "none" # all, none*, or table
 #tabpad = "·"
 
 [editor.indent-guides]
-render = false
-character = "|"
+render = true
+character = "▏"  # Some characters that work well: "▏", "╎", "┆", "┊", "|"
 skip-levels = 1
 
 [editor.gutters]
