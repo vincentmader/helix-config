@@ -1,19 +1,72 @@
 inherits = "solarized_dark"
 
-"ui.background" = "black"
-"ui.background.separator" = "base01"
-"ui.help" = "blue"
-"ui.linenr" = "base01"
-"ui.menu" = "blue"
-"ui.menu.selected" = "white"
-"ui.popup.info" = "blue"
-"ui.statusline" = "base01"
-"ui.text" = "base1"
-"ui.text.focus" = "blue"
-"ui.text.info" = "blue"
-"diagnostic.error" = "red"
+"ui.background" = { bg = "black" }  # color of main background
+"ui.background.separator" = "base1"  # color of line in fuzzy find pickers
 
-"warning" = { fg = "yellow", modifiers = ["bold", "underlined"] }
-"error" = { fg = "red", modifiers = ["bold", "underlined"] }
-"info" = { fg = "blue", modifiers = ["bold", "underlined"] }
-"hint" = { fg = "base01", modifiers = ["bold", "underlined"] }
+"ui.menu" = { bg = "black", fg = "base01" }  # color of unselected items in `:` command mode
+"ui.menu.selected" = { bg = "black", fg = "base1" }  # color of selected items in `:` command mode
+
+"ui.help" = { bg = "black", fg = "base1" }
+
+"ui.popup" = { bg = "base01" }
+"ui.popup.info" = { fg = "base1" }
+
+"ui.statusline" = "base1"
+"ui.statusline.inactive" = "base01"
+"ui.statusline.background" = "base01"
+
+"ui.text.info" = "base01"  # = text color of entries when pressed `SPACE`
+
+"ui.linenr" = { bg = "black", fg = "base01" }
+"ui.linenr.selected" = { bg = "black", fg = "blue", modifiers = ["bold"] }
+
+"ui.bufferline" = { bg = "black", fg = "base01" }
+"ui.bufferline.active" = { bg = "black", fg = "base1" }
+
+"ui.window" = { fg = "base01" }  # = color of line between editor splits
+
+# [palette]
+# base03   = "#002b36"
+# base025  = "#03303b"
+# base02   = "#073642"
+# base0175 = "#16404b"
+# base015  = "#2c4f59"
+# base01   = "#586e75"
+# base00   = "#657b83"
+# base0    = "#839496"
+# base1    = "#93a1a1"
+# base2    = "#eee8d5"
+# base3    = "#fdf6e3"
+
+# yellow  = "#b58900"
+# orange  = "#cb4b16"
+# red     = "#dc322f"
+# magenta = "#d33682"
+# violet  = "#6c71c4"
+# blue    = "#268bd2"
+# cyan    = "#2aa198"
+# green   = "#859900"
+
+[palette]
+base01   = "#586e75"
+base1    = "#93a1a1"
+
+# "ui.background" = "black"
+# "ui.background.separator" = "base01"
+# "ui.help" = "blue"
+# "ui.linenr" = "base01"
+# "ui.menu" = "blue"
+# "ui.menu.selected" = "white"
+# "ui.popup.info" = "blue"
+# "ui.statusline" = "base01"
+# "ui.text" = "base1"
+# "ui.text.focus" = "blue"
+# "ui.text.info" = "blue"
+# "diagnostic.error" = "red"
+
+# "warning" = { fg = "yellow", modifiers = ["bold", "underlined"] }
+# "error" = { fg = "red", modifiers = ["bold", "underlined"] }
+# "info" = { fg = "blue", modifiers = ["bold", "underlined"] }
+# "hint" = { fg = "base01", modifiers = ["bold", "underlined"] }
+
+
