@@ -69,11 +69,15 @@
 # plugins.pylsp_mypy.enabled = true
 # plugins.pylsp_mypy.live_mode = true
 
-# in languages.toml
+# - `uv tool install basedpyright` (type checking), `brew install ruff` (lint, format)
+
 [[language]]
 name = "python"
 auto-format = true
-language-servers = ["pylsp", "ruff"]
+language-servers = ["basedpyright", "ruff"]
+# Without an explicit formatter, Helix formats with the first server that
+# offers it. The file name lets ruff find the project's own configuration.
+formatter = { command = "ruff", args = ["format", "--stdin-filename", "%{buffer_name}", "-"] }
 
 # [language-server.pyright.config.python.analysis]
 # typeCheckingMode = "basic"
@@ -94,8 +98,9 @@ args = ["server"]
 name = "rust"
 language-servers = ["rust-analyzer"]
 
+# Run clippy on save. Lint levels come from each project's `[lints]` table.
 [language-server.rust-analyzer.config]
-checkOnSave = {command = "clippy", extraArgs = ["--", "-W", "clippy::pedantic"] }
+check = { command = "clippy" }
 # cargo = { features = "all" }
 
 # ╭───────────────────────────────────────────────────────────────────────────╮
@@ -109,7 +114,7 @@ checkOnSave = {command = "clippy", extraArgs = ["--", "-W", "clippy::pedantic"] 
 # ╭───────────────────────────────────────────────────────────────────────────╮
 # │ Typst                                                                     │
 # ╰───────────────────────────────────────────────────────────────────────────╯
-# - `cargo install --git https://github.com/nvarner/typst-lsp typst-lsp`
+# - `cargo install --locked tinymist`
 
 [[language]]
 name = "typst"
